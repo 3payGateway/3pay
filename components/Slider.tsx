@@ -13,13 +13,13 @@ const Slider = () => {
       <InfiniteMovingCards
         items={testimonials1}
         direction="left"
-        speed="normal"
+        speed="fast"
       />
 
       <InfiniteMovingCards
         items={testimonials2}
         direction="right"
-        speed="normal"
+        speed="fast"
       />
     </div>
   );
