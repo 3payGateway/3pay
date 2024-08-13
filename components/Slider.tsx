@@ -3,11 +3,12 @@
 import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
-
 const Slider = () => {
   return (
-    <div className="h-[30rem] rounded-md flex flex-col antialiased bg-customLBlue dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-
+    <div className="h-[30rem] font-poppins flex flex-col antialiased bg-customLBlue dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <p className="uppercase flex justify-center regular-24 -mt-1 mb-3 text-white">
+        Supported Chains
+      </p>
 
       <InfiniteMovingCards
         items={testimonials1}
@@ -15,94 +16,75 @@ const Slider = () => {
         speed="normal"
       />
 
-<InfiniteMovingCards
+      <InfiniteMovingCards
         items={testimonials2}
         direction="right"
         speed="normal"
       />
     </div>
-
-    
   );
-}
+};
 
 const testimonials1 = [
   {
-    image: '/ethereum.png',
+    image: '/eth.png',
     name: "ethereum",
   },
   {
-    image: '/osmosis.png', 
-    name: "osmosis",
+    image: '/tron.png',
+    name: "tron",
   },
   {
-    image: '/kava.png', 
+    image: '/polygon.png',
     name: "kava",
   },
   {
-    image: '/filecoin.png', 
-    name: "filecoin",
+    image: '/usdc.png',
+    name: "usdc",
   },
   {
-    image: '/moonbeam1.png', 
-    name: "moonbeam",
+    image: '/base.png',
+    name: "base",
   },
   {
-    image: '/mantle.png', 
-    name: "mantle",
-  },
-  {
-    image: '/arbitrum.png', 
-    name: "arbitrum",
-  },
-  {
-    image: '/fantom.png', 
+    image: '/fantom.png',
     name: "fantom",
   },
   {
-    image: '/optimism.png', 
-    name: "optimism",
-  },
+    image: '/injective.png',
+    name: "injective",
+  }
 ];
 
 const testimonials2 = [
-    {
-        image: '/avalanche.png', 
-        name: "avalanche",
-      },
-      {
-        image: '/polygon.png', 
-        name: "polygon",
-      },
-      {
-        image: '/terra.png', 
-        name: "terra",
-      },
-      {
-        image: '/secret.png', 
-        name: "secret",
-      },
-      {
-        image: '/dymension.png', 
-        name: "dymension",
-      },
-      {
-        image: '/cosmos.png', 
-        name: "cosmos",
-      },
-      {
-        image: '/sei.png', 
-        name: "sei",
-      },
-      {
-        image: '/injective.png', 
-        name: "injective",
-      },
-      {
-        image: '/celestia.png', 
-        name: "celestia",
-      },
-
+  {
+    image: '/solana.png',
+    name: "solana",
+  },
+  {
+    image: '/polka.png',
+    name: "polka",
+  },
+  {
+    image: '/bitcoin.png',
+    name: "bitcoin",
+  },
+  {
+    image: '/eos.png',
+    name: "eos",
+  },
+  {
+    image: '/sei.png',
+    name: "sei",
+  },
+  {
+    image: '/bnb.png',
+    name: "bnb",
+  },
+  {
+    image: '/celestia.png',
+    name: "celestia",
+  },
 ];
 
 export default Slider;

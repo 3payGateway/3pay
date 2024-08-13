@@ -11,7 +11,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    image: string; 
+    image: string;
     name: string;
   }[];
   direction?: "left" | "right";
@@ -95,7 +95,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <img
-              src={item.image} 
+              src={item.image}
               alt={item.name}
               className="w-full h-full object-cover rounded-full"
             />

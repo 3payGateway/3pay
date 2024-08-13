@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,38 +10,39 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Inter;
+html, body {
+  font-family: 'Poppins', sans-serif;
 }
 
 @layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50;
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90;
   }
-  .btn_black_text { 
+  .btn_black_text {
     @apply border-gray-800 bg-black text-white px-4 py-2 font-mono;
   }
-  
+
   button:hover {
-    @apply bg-gray-900;
+    @apply bg-zinc-900;
   }
-  
+
   button:focus {
     outline: none;
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+
+  .btn_green {
+    @apply border-green-50 bg-green-50 px-8 py-5 text-white;
   }
-  .btn_dark_green { 
-    @apply  bg-black px-8 py-4 text-white transition-all hover:bg-gray-50
+  .btn_dark_green {
+    @apply bg-black px-8 py-4 text-white transition-all hover:bg-gray-50;
   }
-  .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
   }
-  
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }

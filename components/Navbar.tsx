@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,9 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flexBetween bg-customLBlue max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween font-poppins bg-customLBlue max-container padding-container p-[10px] relative z-30 py-5">
       <Link href="/">
-        <Image src="logo.jpeg" alt="logo" width={74} height={29} />
+        <Image src="/logo.png" alt="logo" width={60} height={20} />
       </Link>
 
       {/* Desktop Navigation Links */}
@@ -34,7 +34,7 @@ const Navbar = () => {
 
       {/* Desktop Button */}
       <div className="lg:flexCenter hidden">
-        <Button 
+        <Button
           type="button"
           title="Login"
           icon="/user.svg"
@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Icon */}
-      <Image 
+      <Image
         src="/menu.png"
         alt="menu"
         width={32}
@@ -55,7 +55,7 @@ const Navbar = () => {
       {/* Mobile Navigation Links */}
       {menuOpen && (
         <ul className="absolute top-4 right-0 w-full bg-customLBlue shadow-md flex flex-col items-center gap-6 py-4 lg:hidden">
-          <Image 
+          <Image
             src="/close.png"
             alt="close menu"
             width={22}
@@ -68,13 +68,13 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               className="regular-16 text-customDBlue text-customD cursor-pointer transition-all hover:font-bold"
-              onClick={() => setMenuOpen(false)} 
+              onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </Link>
           ))}
 
-          <Button 
+          <Button
             type="button"
             title="Login"
             icon="/user.svg"
