@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const [email, setEmail] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         () => {
           setEmailSent(true);
           setEmail("");
-          setTimeout(() => setEmailSent(false), 3000); 
+          setTimeout(() => setEmailSent(false), 3000);
         },
         (error) => {
           console.error("Failed to send email:", error);
@@ -38,7 +38,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 gap-8">
         {/* First Card */}
         <div className="relative bg-black text-white border-2 border-white p-8 rounded-lg shadow-md h-64">
-          <h2 className="text-2xl font-bold pb-20">Stay Tuned for more Updates</h2>
+          <h2 className="text-2xl font-bold pb-20">
+            Stay Tuned for more Updates
+          </h2>
           <form onSubmit={sendEmail} className="flex items-center">
             <input
               type="email"
@@ -55,7 +57,9 @@ const Footer: React.FC = () => {
               <img src="/mail.png" alt="Submit" />
             </button>
           </form>
-          {emailSent && <p className="mt-2 text-white">Email sent successfully!</p>}
+          {emailSent && (
+            <p className="mt-2 text-white">Email sent successfully!</p>
+          )}
 
           {/* Background Image */}
           <img
@@ -91,19 +95,14 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          
-        <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center py-8 text-customDBlue">
-          2024 3pay | All rights reserved
-        </p>
+          <div className="border bg-gray-20" />
+          <p className="regular-14 w-full text-center py-8 text-customDBlue">
+            2024 3Pay | All rights reserved
+          </p>
         </div>
-
       </div>
     </div>
   );
 };
 
 export default Footer;
-
-
-

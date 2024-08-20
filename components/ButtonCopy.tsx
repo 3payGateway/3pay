@@ -12,13 +12,7 @@ interface ButtonProps {
   link?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  type,
-  title,
-  icon,
-  variant,
-  link,
-}) => {
+const Button = ({ type, title, icon, variant, link }: ButtonProps) => {
   const [showCheckIcon, setShowCheckIcon] = useState(false);
 
   const handleClick = () => {

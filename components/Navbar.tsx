@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { SiGithub } from "react-icons/si";
 import Button from "./Button";
 
 const Navbar = () => {
@@ -32,25 +33,50 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Desktop Button */}
-      <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div>
+      <div className="lg:flexCenter">
+        {/* Desktop View */}
+        <div className="w-3/5 flex items-center justify-end lg:mr-8 hidden lg:flex">
+          <label className="flex items-center justify-center bg-white rounded-full w-8 h-8 hover:shadow-gray-400 shadow-sm transition-all">
+            <a
+              aria-label="get source code"
+              title="get source code"
+              href="https://github.com/3payGateway/3pay"
+            >
+              <SiGithub size={14} />
+            </a>
+          </label>
+        </div>
 
-      {/* Mobile Menu Icon */}
-      <Image
-        src="/menu.png"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-        onClick={toggleMenu}
-      />
+        <div className="lg:flexCenter hidden lg:block">
+          <Button
+            type="button"
+            title="Login"
+            icon="/user.svg"
+            variant="btn_dark_green"
+          />
+        </div>
+
+        {/* Mobile View */}
+        <div className="flex items-center lg:hidden">
+          <label className="flex items-center justify-center bg-white rounded-full w-8 h-8 hover:shadow-gray-400 shadow-sm transition-all mr-4">
+            <a
+              aria-label="get source code"
+              title="get source code"
+              href="https://github.com/3payGateway/3pay"
+            >
+              <SiGithub size={14} />
+            </a>
+          </label>
+          <Image
+            src="/menu.png"
+            alt="menu"
+            width={32}
+            height={32}
+            className="cursor-pointer"
+            onClick={toggleMenu}
+          />
+        </div>
+      </div>
 
       {/* Mobile Navigation Links */}
       {menuOpen && (

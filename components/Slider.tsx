@@ -7,7 +7,7 @@ const Slider = () => {
   return (
     <div className="h-[30rem] font-poppins flex flex-col antialiased bg-customLBlue dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <p className="uppercase flex justify-center regular-24 -mt-1 mb-3 text-white">
-        Supported Chains
+        Supported BlockChains
       </p>
 
       <InfiniteMovingCards
@@ -27,62 +27,62 @@ const Slider = () => {
 
 const testimonials1 = [
   {
-    image: '/eth.png',
+    image: "/eth.png",
     name: "ethereum",
   },
   {
-    image: '/tron.png',
+    image: "/tron.png",
     name: "tron",
   },
   {
-    image: '/polygon.png',
+    image: "/polygon.png",
     name: "kava",
   },
   {
-    image: '/usdc.png',
+    image: "/usdc.png",
     name: "usdc",
   },
   {
-    image: '/base.png',
+    image: "/base.png",
     name: "base",
   },
   {
-    image: '/fantom.png',
+    image: "/fantom.png",
     name: "fantom",
   },
   {
-    image: '/injective.png',
+    image: "/injective.png",
     name: "injective",
-  }
+  },
 ];
 
 const testimonials2 = [
   {
-    image: '/solana.png',
+    image: "/solana.png",
     name: "solana",
   },
   {
-    image: '/polka.png',
+    image: "/polka.png",
     name: "polka",
   },
   {
-    image: '/bitcoin.png',
+    image: "/bitcoin.png",
     name: "bitcoin",
   },
   {
-    image: '/eos.png',
+    image: "/eos.png",
     name: "eos",
   },
   {
-    image: '/sei.png',
+    image: "/sei.png",
     name: "sei",
   },
   {
-    image: '/bnb.png',
+    image: "/bnb.png",
     name: "bnb",
   },
   {
-    image: '/celestia.png',
+    image: "/celestia.png",
     name: "celestia",
   },
 ];

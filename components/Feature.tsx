@@ -1,8 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
 import { FeatureCard } from "@/components/ui/feature-card";
 import { FEATURE_LINK } from "@/constants";
-import { MdOutlineFeaturedPlayList } from "react-icons/md";
 
 export default function Feature() {
   const list = FEATURE_LINK;
@@ -10,7 +8,7 @@ export default function Feature() {
   return (
     <section
       id="feature"
-      className="relative font-poppins bg-customLBlue px-10 py-10 md:py-20 "
+      className="relative font-poppins bg-customLBlue px-10 py-10 md:py-16 "
     >
       <h2 className="flex justify-center bold-40 lg:bold-64 text-white pb-12">
         <strong>Our Services</strong>

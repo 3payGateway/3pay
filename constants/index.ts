@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "documentation ", label: "Documentation" },
-  { href: "#how", key: "how_3pay_work", label: "How 3pay Works?" },
+  { href: "#how", key: "how_3Pay_work", label: "How 3Pay Works?" },
   { href: "#about", key: "about", label: "About" },
   { href: "#feature", key: "services", label: "Services" },
 ];
@@ -18,7 +18,7 @@ export const FEATURE_LINK = [
     id: 2,
     description:
       "Safe Transactions, Without Breaking the Bank. With 3Pay, security and affordability go hand in hand. Our platform offers a secure environment for cryptocurrency transactions, letting you make payments with nearly negligible gas fees. Whether you're shopping on a marketplace or making a purchase on an e-commerce site, you can trust 3Pay to keep your transactions safe and your costs low. A Payment Experience as Smooth as Silk. Say goodbye to complicated processes and high fees. With 3Pay, we've crafted a payment experience that's as straightforward as it is efficient. Our user-friendly interface and cutting-edge technology ensure that every transaction is completed quickly and effortlessly, so you can focus on what matters most. Enjoy the ease of seamless payments, every time you use 3Pay.",
-      title: "For Users : Secure, Affordable, and Effortless Payments",
+    title: "For Users : Secure, Affordable, and Effortless Payments",
   },
   {
     id: 3,
@@ -31,35 +31,31 @@ export const FEATURE_LINK = [
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
-    title: 'Learn More',
+    title: "Learn More",
     links: [
-      { label: 'About Us', url: '#about' },
-      { label: 'Documentation', url: '/' },
-      { label: 'Contact Us', url: '/' },
+      { label: "About Us", url: "#about" },
+      { label: "Documentation", url: "/" },
+      { label: "Contact Us", url: "/" },
     ],
   },
   {
-    title: 'Our Community',
+    title: "Our Community",
     links: [
-      { label: 'Discord', url: 'https://discord.com' },
-      { label: 'Twitter', url: 'https://x.com/3Paygateway' },
+      { label: "Discord", url: "https://discord.com" },
+      { label: "Twitter", url: "https://x.com/3Paygateway" },
     ],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
-  title: 'Contact Us',
+  title: "Contact Us",
   links: [
-    { label: 'Phone', value: '123-456-7890' },
-    { label: 'Email', value: '3pay@gmail.com' },
+    { label: "Phone", value: "123-456-7890" },
+    { label: "Email", value: "3pay@gmail.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: 'Social',
-  links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-  ],
+  title: "Social",
+  links: ["/facebook.svg", "/instagram.svg", "/twitter.svg"],
 };

@@ -6,9 +6,9 @@ import { WobbleCard } from "@/components/ui/wobble-card";
 
 const How = () => {
   return (
-    <div id="how" className="p-20 font-poppins bg-customLBlue">
+    <div id="how" className="p-10 md:p-20 font-poppins bg-customLBlue">
       <h2 className="flex justify-center bold-40 lg:bold-64 text-white pb-12">
-        <strong>How 3pay Works?</strong>
+        <strong>How 3Pay Works?</strong>
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -18,7 +18,9 @@ const How = () => {
               Effortless Component Generation with Bash Commands
             </h2>
             <p className="mt-4 text-left  text-base/6 text-gray-20">
-              3Pay leverages bash commands to seamlessly generate custom components, streamlining the development process and reducing manual coding effort.
+              3Pay leverages bash commands to seamlessly generate custom
+              components, streamlining the development process and reducing
+              manual coding effort.
             </p>
           </div>
           <Image
@@ -35,7 +37,9 @@ const How = () => {
             Seamless Cross-Chain Asset Bridging
           </h2>
           <p className="mt-4 max-w-[66rem] text-left text-base/6 text-gray-20">
-            3Pay's cross-chain communication enables smooth asset transfers between Ethereum and supported chains, enhancing liquidity and expanding usability.
+            3Pay's cross-chain communication enables smooth asset transfers
+            between Ethereum and supported chains, enhancing liquidity and
+            expanding usability.
           </p>
         </WobbleCard>
 
@@ -45,7 +49,9 @@ const How = () => {
               Simplified Integration with Next.js & React
             </h2>
             <p className="mt-4 max-w-[26rem] text-left text-base/6 text-gray-20">
-              3Pay simplifies integration by auto-generating custom components for popular frameworks like Next.js and React, ensuring a smooth development experience.
+              3Pay simplifies integration by auto-generating custom components
+              for popular frameworks like Next.js and React, ensuring a smooth
+              development experience.
             </p>
           </div>
           <Image
